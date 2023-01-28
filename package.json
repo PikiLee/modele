@@ -4,12 +4,13 @@
   "description": "",
   "main": "dist/src/index.js",
   "type": "module",
+  "packageManager": "pnpm@7.26.1",
   "scripts": {
     "lint": "eslint --cache --fix .",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "build": "rimraf dist && tsc",
-    "prepack": "npm run build"
+    "prepack": "pnpm run build"
   },
   "files": [
     "dist/src/*"
