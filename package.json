@@ -15,6 +15,7 @@
   "files": [
     "dist/src/*"
   ],
+  "types": "dist/src/index.d.ts",
   "keywords": [],
   "author": "",
   "license": "MIT",
