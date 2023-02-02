@@ -6,7 +6,7 @@
   "type": "module",
   "packageManager": "pnpm@7.26.1",
   "scripts": {
-    "lint": "eslint --cache --fix .",
+    "lint": "eslint --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix .",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "build": "rimraf dist && tsc",
