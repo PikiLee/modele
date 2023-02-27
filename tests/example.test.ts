@@ -1,3 +1,5 @@
 import { test, expect } from 'vitest'
 
-test('name', () => { expect(true).toBeTruthy() })
+test('name', () => {
+	expect(true).toBeTruthy()
+})
