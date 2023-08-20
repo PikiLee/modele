@@ -11,6 +11,6 @@ export default defineConfig({
 			fileName: 'main',
 			formats: ['es'],
 		},
-		target: 'esnext',
+		target: 'es2020',
 	},
 })
