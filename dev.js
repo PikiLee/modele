@@ -12,6 +12,7 @@ chokidar
 		ignoreInitial: true,
 	})
 	.on('all', (event, path) => {
+		console.log('------------------------')
 		console.log(`File ${path} has been ${event}`)
 		if (timeout) clearTimeout(timeout)
 		timeout = setTimeout(() => {
