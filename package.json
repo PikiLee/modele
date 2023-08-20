@@ -8,7 +8,8 @@
 		"build": "tsc && vite build",
 		"preview": "vite preview",
 		"prepare": "husky install",
-		"lint-staged": "lint-staged"
+		"lint-staged": "lint-staged",
+		"test": "vitest"
 	},
 	"devDependencies": {
 		"eslint": "^8.47.0",
@@ -18,7 +19,8 @@
 		"lint-staged": "^14.0.0",
 		"prettier": "^3.0.2",
 		"typescript": "^5.0.2",
-		"vite": "^4.4.5"
+		"vite": "^4.4.5",
+		"vitest": "^0.34.2"
 	},
 	"lint-staged": {
 		"*.{js,ts}": [
