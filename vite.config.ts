@@ -9,6 +9,8 @@ export default defineConfig({
 			name: 'my-ts-lib',
 			// the proper extensions will be added
 			fileName: 'main',
+			formats: ['es'],
 		},
+		target: 'esnext',
 	},
 })
