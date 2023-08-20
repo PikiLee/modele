@@ -6,9 +6,9 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: resolve(__dirname, "src/main.ts"),
-      name: "x-to-notion",
+      name: "my-ts-lib",
       // the proper extensions will be added
-      fileName: "x-to-notion",
+      fileName: "my-ts-lib",
     },
   },
 });
