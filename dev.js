@@ -2,6 +2,9 @@ import { build } from 'vite'
 import chokidar from 'chokidar'
 import { execa } from 'execa'
 
+let timeout = null
+let childProcess = null
+
 buildAndRun()
 
 chokidar
@@ -10,7 +13,10 @@ chokidar
 	})
 	.on('all', (event, path) => {
 		console.log(`File ${path} has been ${event}`)
-		buildAndRun()
+		if (timeout) clearTimeout(timeout)
+		timeout = setTimeout(() => {
+			buildAndRun()
+		}, 300)
 	})
 
 function buildAndRun() {
@@ -18,6 +24,9 @@ function buildAndRun() {
 	build().then(() => {
 		console.log('Build done')
 		console.log('Start running...')
-		execa('node', ['./dist/main.js'], { stdio: 'inherit' })
+		if (childProcess) {
+			childProcess.kill()
+		}
+		childProcess = execa('node', ['./dist/main.js'], { stdio: 'inherit' })
 	})
 }
