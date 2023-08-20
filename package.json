@@ -13,6 +13,7 @@
 		"test": "vitest"
 	},
 	"devDependencies": {
+		"@types/node": "^20.5.1",
 		"@typescript-eslint/eslint-plugin": "^6.4.0",
 		"@typescript-eslint/parser": "^6.4.0",
 		"chokidar": "^3.5.3",
