@@ -1,11 +1,15 @@
 {
-  "extends": ["plugin:prettier/recommended"],
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2020
-  },
-  "plugins": ["prettier"],
-  "rules": {
-    "prettier/prettier": "error"
-  }
+	"env": {
+		"node": true,
+		"es2020": true
+	},
+	"extends": ["plugin:prettier/recommended"],
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": 2020
+	},
+	"plugins": ["prettier"],
+	"rules": {
+		"prettier/prettier": "error"
+	}
 }

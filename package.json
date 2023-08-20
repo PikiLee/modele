@@ -1,32 +1,31 @@
 {
-  "name": "x-to-notion",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "prepare": "husky install",
-    "lint-staged": "lint-staged"
-  },
-  "devDependencies": {
-    "@types/node": "^20.5.1",
-    "eslint": "^8.47.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.0",
-    "prettier": "^3.0.2",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
-  },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "eslint --fix"
-    ],
-    "*.{json,md}": [
-      "prettier --write"
-    ]
-  }
+	"name": "x-to-notion",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"prepare": "husky install",
+		"lint-staged": "lint-staged"
+	},
+	"devDependencies": {
+		"eslint": "^8.47.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-prettier": "^5.0.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^14.0.0",
+		"prettier": "^3.0.2",
+		"typescript": "^5.0.2",
+		"vite": "^4.4.5"
+	},
+	"lint-staged": {
+		"*.{js,ts}": [
+			"eslint --fix"
+		],
+		"*.{json,md}": [
+			"prettier --write"
+		]
+	}
 }
