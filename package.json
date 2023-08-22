@@ -4,10 +4,8 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "node dev.js",
-		"build": "tsc && vite build",
-		"build-watch": "tsc && vite build --watch",
-		"preview": "vite preview",
+		"build": "tsup",
+		"dev": "tsup --watch",
 		"prepare": "husky install",
 		"lint-staged": "lint-staged",
 		"test": "vitest"
@@ -24,6 +22,7 @@
 		"husky": "^8.0.3",
 		"lint-staged": "^14.0.0",
 		"prettier": "^3.0.2",
+		"tsup": "^7.2.0",
 		"typescript": "^5.0.2",
 		"vite": "^4.4.5",
 		"vitest": "^0.34.2"
